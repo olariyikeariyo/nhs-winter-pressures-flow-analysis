@@ -1,4 +1,4 @@
-# healthcare-health-equity-analysis
+# uk-healthcare-health-equity-analysis
 Population health analysis using CDC PLACES and Census data to identify geographic disparities in health outcomes and access.
 Badges
 Title + 1–2 line summary

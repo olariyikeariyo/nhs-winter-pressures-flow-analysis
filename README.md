@@ -1,5 +1,7 @@
-# uk-healthcare-health-equity-analysis
-Population health analysis using CDC PLACES and Census data to identify geographic disparities in health outcomes and access.
+uk-nhs-waiting-times-capacity-insight
+
+Analysis of NHS Referral to Treatment waiting times across England identifying regional inequality drivers capacity constraints and backlog reduction scenarios using NHS England and ONS data.
+
 Badges
 Title + 1–2 line summary
 

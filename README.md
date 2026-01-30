@@ -1,62 +1,66 @@
-# uk-nhs-waiting-times-capacity-insight
+# NHS Winter Pressures Flow Analysis
 
 ## Overview
-This project analyses NHS Referral to Treatment waiting times across England to understand how access and backlog vary by region specialty and deprivation.  
-The analysis is framed to support Trust and Integrated Care System leaders making decisions on capacity allocation and backlog reduction.
+An operational analysis of bed occupancy and A&E performance during winter pressure periods.
 
 ## Problem Statement
-NHS waiting times have increased substantially with wide regional variation. Patients in more deprived areas often experience longer waits despite similar clinical need. Current reporting focuses on volumes rather than decision support making it difficult to identify where limited capacity investment will deliver the greatest benefit. This creates delivery risk increases inequality and delays patient care.
+High bed occupancy and delayed discharges restrict patient flow, contributing to long A&E waits and operational strain during winter months.
 
 ## Stakeholders
-- NHS England / ICS leadership
+- NHS England
 - Trust operational teams
-- Commissioners
+- ICS urgent care leads
 - Patients and public
 
 ## Key Questions
-- How do waiting times vary by region Trust and specialty?
-- What is the relationship between deprivation and waiting time performance?
-- Which services contribute most to backlog growth?
+- Which trusts exceeded safe bed occupancy thresholds?
+- Is high occupancy associated with poorer A&E performance?
+- Where are the key system bottlenecks?
 
 ## Data Sources
-- Dataset name – provider
-- Time period
-- Coverage and limitations
+- **Urgent and Emergency Care SitReps – Monthly Averages** (NHS England)  
+- **Time period:** Selected winter month  
+- **Coverage and limitations:** Monthly averages smooth daily volatility.
 
 ## Approach
 - Data ingestion and cleaning
-- Exploratory analysis
-- Feature engineering
-- Analysis or modelling method
-- Validation and sense-checks
+- Identification of trusts exceeding 95% occupancy
+- Correlation analysis between occupancy and A&E waits
+- System flow interpretation
 
 ## Key Findings
-- Finding 1 with short explanation
-- Finding 2
-- Finding 3
+- Many trusts operate above safe occupancy levels
+- Higher occupancy correlates with poorer A&E performance
+- Discharge delays appear to be a key constraint
 
 ## Visual Outputs
-Describe charts dashboards or tables included.
-Reference notebooks or apps.
+- Bed occupancy distribution charts  
+- A&E performance comparisons  
+- Occupancy vs wait-time scatter plots
 
 ## Delivery Considerations
-- Data quality issues and assumptions
-- Risks and mitigations
-- Constraints and trade-offs
+- Correlation does not imply causation
+- External demand factors not modelled
+- Snapshot analysis limits trend insight
 
 ## Recommendations
-Actionable recommendations framed for decision-makers.
-Prioritised where possible.
+- Prioritise discharge capacity ahead of winter
+- Use occupancy as a leading escalation indicator
+- Strengthen system-level flow monitoring
 
 ## Impact
-What would change if these recommendations were acted on.
-Operational financial or patient impact.
+Improved patient flow would reduce A&E waits, improve safety, and increase system resilience during peak demand.
 
 ## Tools Used
-Python pandas numpy matplotlib seaborn SQL VSCode
+Python pandas numpy matplotlib seaborn VSCode
 
 ## How to Run
-Steps to reproduce analysis locally.
+1. Clone the repository  
+2. Install dependencies  
+3. Add SitRep data to `data/raw`  
+4. Run `python run.py`
 
 ## Next Steps
-What you would do with more time data or access.
+- Add daily SitRep analysis
+- Include delayed discharge metrics
+- Model capacity and flow scenarios
